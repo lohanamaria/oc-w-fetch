@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pegue o ghostface</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    .start-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    
+    #tela {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    #tela img {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+    }
+    
+    .score {
+      margin-top: 20px;
+    }
+    
+    .score span {
+      font-weight: bold;
+    }
+    
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    
+    table th, table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pegue o Ghostface</h1>
+  <button class="start-button" onclick="iniciaJogo()">Iniciar Jogo</button>
+
+  <div id="tela"></div>
+
+  <div class="score">
+    <h2><span>Pontos:</span> <span id="pontos">0</span></h2>
+  </div>
+  <div class="score">
+    <h2><span>Tempo:</span> <span id="tempo">15</span> segundos</h2>
+  </div>
+
+  <table id="placar">
+    <thead>
+      <tr>
+        <th>Jogador</th>
+        <th>Pontuação</th>
+        <th>Data e hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dados da tabela serão preenchidos dinamicamente -->
+    </tbody>
+  </table>
+
+  <script src="game.js"></script>
+</body>
+</html>

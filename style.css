@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.start-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+#tela {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#tela img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.score {
+  margin-top: 20px;
+}
+
+.score span {
+  font-weight: bold;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ffc0cb;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: white;
+}
